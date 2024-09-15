@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+    creationTimestamp: null
+    name: test1
+spec: {}
+status: {}
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/k8s-k3s-430300/locations/global/keyRings/kms-key1/cryptoKeys/kms-key1-1
+          created_at: "2024-09-08T22:40:16Z"
+          enc: CiQALgA0EJhyUB41UoCPzOLFf2z+xRSHk6ORHP1gyZDCIOFEbKMSSQDDf90sfYZoU8zxDL+i7izC/SLAsQ7aSHBL4SVDDmPClxlMbF3FveuGEmUlRd8Cz3/e4s4QU5hbTNH65sRP7A9RGPefgaAUUbc=
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2024-09-08T22:40:16Z"
+    mac: ENC[AES256_GCM,data:UzmCW1thS3A966ru2+nodEvg3AGAw7FLqIYe/O3XEZTDMbI6sCDhaQg/oUj4XgOOdlqKeDwZn46DaaBOukpYgzc3etIhtkN0A46Hn7uuEAn4VvRl5SzcQfysYpxINCohlNmJBioE96vtawC/nEnYG0racQYjTJKCTJMYUZPNTfw=,iv:D5KPxpz+hn3+3osHob0g0bCYuzzmfLXyE2/o+YklzTM=,tag:Op8YKsXftFelSjl9uefWGg==,type:str]
+    pgp: []
+    encrypted_regex: ^(token)$
+    version: 3.9.0
+---
+apiVersion: v1
+data:
+    token: ENC[AES256_GCM,data:kg7ibBwhtHY+MnsgnqzH6HDRydF3M8Qwg2wuLz+L7LFWUEHYlM6Aq7VlCXU9+ajpbGj6dORu6HdFej6E4mgLCw==,iv:4WiFng5p+/J21QdAr9Y9JTMqXPtRE4TNv0WNNo/de7Y=,tag:F+acD+XF7JG5RBHjJgzwFg==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: kbot
+    namespace: test1
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/k8s-k3s-430300/locations/global/keyRings/kms-key1/cryptoKeys/kms-key1-1
+          created_at: "2024-09-08T22:40:16Z"
+          enc: CiQALgA0EJhyUB41UoCPzOLFf2z+xRSHk6ORHP1gyZDCIOFEbKMSSQDDf90sfYZoU8zxDL+i7izC/SLAsQ7aSHBL4SVDDmPClxlMbF3FveuGEmUlRd8Cz3/e4s4QU5hbTNH65sRP7A9RGPefgaAUUbc=
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2024-09-08T22:40:16Z"
+    mac: ENC[AES256_GCM,data:UzmCW1thS3A966ru2+nodEvg3AGAw7FLqIYe/O3XEZTDMbI6sCDhaQg/oUj4XgOOdlqKeDwZn46DaaBOukpYgzc3etIhtkN0A46Hn7uuEAn4VvRl5SzcQfysYpxINCohlNmJBioE96vtawC/nEnYG0racQYjTJKCTJMYUZPNTfw=,iv:D5KPxpz+hn3+3osHob0g0bCYuzzmfLXyE2/o+YklzTM=,tag:Op8YKsXftFelSjl9uefWGg==,type:str]
+    pgp: []
+    encrypted_regex: ^(token)$
+    version: 3.9.0
